@@ -5,7 +5,7 @@
     crossorigin="anonymous"></script>
 	<link rel="icon" type="image/x-icon" href="/asset/whatsapp-logo.png">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"	>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chris Rayn</title>
     <style>
         body {
@@ -40,17 +40,28 @@
             text-align: center;
             padding: 50px 20px;
             flex-grow: 1;
-        }
-        .video-container {
+		}
+        .image-section {
             display: flex;
             justify-content: center;
-            background-color: rgba(0, 0, 0, 0.1);
             padding: 30px;
         }
-        .video-container video {
-            max-width: 100%;
-            background-color: rgba(0, 0, 0, 0.1);
-            padding: 10px;
+        .image-column {
+            flex: 1;
+            text-align: center;
+        }
+        .image-column a {
+            display: block;
+        }
+        .image-column img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+        .image-column img:hover {
+            transform: scale(1.1);
         }
     </style>
 </head>
@@ -63,14 +74,30 @@
         </nav>
     </header>
     <div class="body-content">
-        <h1>Welcome to My Profile</h1>
-        <p>Looking KuruKuru Init</p>
-        <div class="video-container">
-            <video width= "50%" controls>
-                <source src="https://www.chrisrayn.xyz/kurukuru.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </div>
+        <h1>Contact</h1>
+        <p>Now we're getting into some business shall we</p>
+        <div class="image-section">
+            <div class="image-column">
+                <a href="https://wa.me/60132658364">
+                    <img src="/asset/whatsapp-logo.png" alt="Image 1">
+                </a>
+            </div>
+            <div class="image-column">
+                <a href="https://www.tiktok.com/@chrisrevieww">
+                    <img src="/asset/tiktok-logo.png" alt="Image 2">
+                </a>
+            </div>
+            <div class="image-column">
+				<a href="https://www.youtube.com/watch?v=xvFZjo5PgG0">
+					<img src="C:\Users\Chris Rayn\Downloads\nothing_here.png" alt="Image 3">
+				</a>
+            </div>
+            <div class="image-column">
+				<a href="https://www.youtube.com/watch?v=xvFZjo5PgG0">
+					<img src="C:\Users\Chris Rayn\Downloads\nothing_here.png" alt="Image 4">
+				</a>
+            </div>
+        </div>        
     </div>
     <footer>
         <p>&copy; 2025 Chris. All Rights Reserved.</p>
